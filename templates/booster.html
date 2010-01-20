@@ -1,0 +1,8 @@
+<html>
+<head><title>Here's your booster</title></head>
+<body>
+{% for card in booster %}
+<img src="/netrunner/card_images/{{card.filename}}" />
+{% endfor %}
+</body>
+</html>
