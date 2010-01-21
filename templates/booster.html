@@ -2,7 +2,14 @@
 <head><title>Here's your booster</title></head>
 <body>
 {% for card in booster %}
-<img src="/netrunner/card_images/{{card.filename}}" />
+<img width="210px" src="/netrunner/card_images/{{card.filename}}" />
 {% endfor %}
+<div class="clear:both;"></div>
+<ul>
+    
+    {% for card in booster %}
+    <li>{ {{card.player}} }[{{card.rarity}}]{{card.card_name}}</li>
+    {% endfor %}
+</ul>
 </body>
 </html>
